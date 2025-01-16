@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/basic-layout.css">
+    <link rel="stylesheet" href="../css/login-form.css">
+    <title>Shitposting Strategies</title>
+</head>
+<body>
+    <div class = "master-background">
+        <div class = "centered-box">
+            <h1 style = "color: lightyellow; font-size: 40px; margin-left: 110px; margin-top: 60px;">
+                Sign in
+            </h1>
+            <div>
+                <form action="">
+                    <table class = "form-table">
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div>
+                <p>Are you a racist?</p>
+                <div class = "captcha-box">
+                    <input type="checkbox" id = "captchaCheckbox">
+                    <div id = "captchaSpinner"></div>
+                    <img src="../images/icons/checked.png" alt="" id = "verifiedMark">
+                    <div style = "color: black; position:absolute; top: 0.9rem; left: 2.3rem">
+                        I'm not a racist
+                    </div>
+                    <div style = "position: absolute; right: 0rem; bottom: 0rem;">
+                        <img src="../images/amogus/black-crewmate.png" alt="" style = "width: 50px; height: 50px;">
+                    </div>
+                    <div id="captchaOverlay">
+                        <div class="captcha">
+                            <div class="verification-box">
+                                <div class="verification-header">
+                                    <div style="color: white; font-size: 22px; padding: 10px;">
+                                        Select all squares with a <br>
+                                        <span style="font-size: 30px; font-weight: bolder;">Black Nig</span>
+                                    </div>
+                                    <div>
+                                        <img src="../images/others/dominus.png" alt="Verification Icon" class="verification-icon">
+                                    </div>
+                                </div>
+                                <div id = "verificationImages">
+                                    <img src="../images/captchas/captcha1/00.jpg" alt="">
+                                    <img src="../images/captchas/captcha1/10.jpg" alt="">
+                                    <img src="../images/captchas/captcha1/20.jpg" alt="">
+
+                                    <img src="../images/captchas/captcha1/01.jpg" alt="">
+                                    <img src="../images/captchas/captcha1/11.jpg" alt="">
+                                    <img src="../images/captchas/captcha1/21.jpg" alt="">
+
+                                    <img src="../images/captchas/captcha1/02.jpg" alt="">
+                                    <img src="../images/captchas/captcha1/12.jpg" alt="">
+                                    <img src="../images/captchas/captcha1/22.jpg" alt="">
+
+                                    <img src="../images/captchas/captcha1/03.jpg" alt="">
+                                    <img src="../images/captchas/captcha1/13.jpg" alt="">
+                                    <img src="../images/captchas/captcha1/23.jpg" alt="">
+                                </div>
+                                <div>
+                                    <hr style = "margin-right: 5px; margin-left: 5px;">
+                                    <img id = "questionMarkIcon" src="../images/icons/question-mark.png" alt="">
+                                    <span id = "tryAgainText">Try again, you fucking idiot!</span>
+                                    <span><button id = "verifyButton">Verify</button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "register-button">
+                <button>Continue</button>
+                <hr style = "margin-right: 30px">
+            </div>
+            <div class = "register-button">
+                <h4 style = "padding-left: 40px">New to Shitposting Strategies?</h4>
+                <button style = "margin-top: 0;">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <script src = "../scripts/captcha.js"></script>
+</body>
+</html>

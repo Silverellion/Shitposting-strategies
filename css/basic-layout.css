@@ -1,0 +1,100 @@
+* {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: 20px;
+}
+
+.master-background {
+    background-color: rgb(39, 39, 39);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.master-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+.header {
+    border: 1px white solid;
+
+    margin-right: 250px;
+    margin-left: 250px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    align-content: center;
+}
+
+.link-list {
+    list-style: none;
+    display: flex;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.link-list:last-child {
+    margin-left: auto;
+}
+
+.link-list li {
+    display: flex;
+    align-items: center; 
+    margin-right: 20px;
+}
+
+.icon {
+    width: 25px; 
+    height: 25px; 
+}
+
+.icon-big {
+    width: 40px;
+    height: 40px;
+}
+
+.bold {
+    font-weight: 200;   
+}
+
+.form-button {
+    background-color: transparent;
+    border: none;
+}
+
+.form-button:hover {
+    background-color: transparent;
+    border: none;
+
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.centered-box {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.form-table tr {
+    padding: 10px;
+}
+
+.form-table tr td {
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+.form-table tr td input {
+    color: black;
+}
+
