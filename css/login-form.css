@@ -1,3 +1,20 @@
+.form-table tr td {
+    padding-top: 20px;
+    padding-right: 40px;
+    color: white;
+}
+
+.form-table-2 tr td {
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 40px;
+    color: white;
+}
+
+.form-table-2 tr td input {
+    width: 300px;
+}
+
 .captcha-box {
     background-color: white;
     margin-right: 20px;
@@ -73,6 +90,7 @@
     transform: scale(0.8); 
 
     transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
 }
 
 #captchaOverlay.active {
@@ -166,6 +184,7 @@
     border-radius: 5px; 
 
     background-color: rgb(43, 128, 255);
+    color: white;
     position: absolute; 
 
     margin-top: 0; 

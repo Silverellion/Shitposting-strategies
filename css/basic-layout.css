@@ -1,5 +1,4 @@
 * {
-    color: white;
     font-family: 'Gill Sans', 'Gill Sans MT';
     font-size: 20px;
 }
@@ -49,6 +48,20 @@
     margin-right: 20px;
 }
 
+.link-list li a {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.link-list li a:hover {
+    background-color: transparent;
+    border: none;
+
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
 .icon {
     width: 25px; 
     height: 25px; 
@@ -63,19 +76,6 @@
     font-weight: 200;   
 }
 
-.form-button {
-    background-color: transparent;
-    border: none;
-}
-
-.form-button:hover {
-    background-color: transparent;
-    border: none;
-
-    color: cornflowerblue;
-    cursor: pointer;
-}
-
 .centered-box {
     margin-top: 20px;
     display: grid;
@@ -85,16 +85,10 @@
     justify-content: center;
 }
 
-.form-table tr {
-    padding: 10px;
+.go-back {
+    color: white;
 }
 
-.form-table tr td {
-    padding-top: 20px;
-    padding-right: 40px;
+.go-back:hover {
+    color: cornflowerblue;
 }
-
-.form-table tr td input {
-    color: black;
-}
-

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/basic-layout.css">
+    <link rel="stylesheet" href="../css/login-form.css">
+    <title>Shitposting Strategies</title>
+</head>
+<body>
+    <div class = "master-background">
+        <div class = "centered-box">
+            <h1 style = "color: lightyellow; font-size: 40px; margin-left: 130px; margin-top: 60px;">
+                Registration
+            </h1>
+            <div style = "margin-top: -50px;">
+                <form action="">
+                    <table class = "form-table-2">
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="Email"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <td>Repeat Password</td>
+                            <td><input type="password"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div>
+                <p style = "color: white">Are you smarter than the average American?</p>
+                <div class = "captcha-box">
+                    <input type="checkbox" id = "captchaCheckbox">
+                    <div id = "captchaSpinner"></div>
+                    <img src="../images/icons/checked.png" alt="" id = "verifiedMark">
+                    <div style = "position:absolute; top: 0.9rem; left: 2.3rem">
+                        Yes, I am!
+                    </div>
+                    <div style = "position: absolute; right: 0rem; bottom: 0rem;">
+                        <img src="../images/others/muhammed-advol.png" alt="" style = "width: 50px; height: 50px; margin-right: 5px;">
+                    </div>
+                    <div id="captchaOverlay">
+                        <div class="captcha">
+                            <div class="verification-box">
+                                <div class="verification-header">
+                                    <div style="color: white; font-size: 22px; padding: 10px;">
+                                        Select all squares with a <br>
+                                        <span style="font-size: 30px; font-weight: bolder;">Crewmate</span>
+                                    </div>
+                                    <div>
+                                        <img src="../images/others/dominus.png" alt="Verification Icon" class="verification-icon">
+                                    </div>
+                                </div>
+                                <div id = "verificationImages">
+                                    <img src="../images/captchas/captcha2/00.jpg" alt="">
+                                    <img src="../images/captchas/captcha2/10.jpg" alt="">
+                                    <img src="../images/captchas/captcha2/20.jpg" alt="">
+
+                                    <img src="../images/captchas/captcha2/01.jpg" alt="">
+                                    <img src="../images/captchas/captcha2/11.jpg" alt="">
+                                    <img src="../images/captchas/captcha2/21.jpg" alt="">
+
+                                    <img src="../images/captchas/captcha2/02.jpg" alt="">
+                                    <img src="../images/captchas/captcha2/12.jpg" alt="">
+                                    <img src="../images/captchas/captcha2/22.jpg" alt="">
+
+                                    <img src="../images/captchas/captcha2/03.jpg" alt="">
+                                    <img src="../images/captchas/captcha2/13.jpg" alt="">
+                                    <img src="../images/captchas/captcha2/23.jpg" alt="">
+                                </div>
+                                <div style = "position: relative;">
+                                    <hr style = "margin-right: 5px; margin-left: 5px;">
+                                    <img id = "questionMarkIcon" src="../images/icons/question-mark.png" alt="">
+                                    <span id = "tryAgainText">Try again, you fucking idiot</span>
+                                    <span><button id = "verifyButton">Verify</button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "register-button" style = "margin-left: 80px; margin-top: -20px">
+                <button>Continue</button>
+            </div>
+            <div style="margin-top: -70px; position: relative">
+                <hr style = "margin-left: -30px;">
+                <div style = "position: absolute; left: 11rem; bottom: 2rem; background-color: rgb(39, 39, 39); font-size: 30px; color: white">
+                    OR
+                </div>
+            </div>
+            <div style = "margin-left: 50px; margin-top: -20px;">
+                <div id="g_id_onload"
+                    data-client_id="677716924006-oagcqohpu9apo735u57r15pld0c2ef5g.apps.googleusercontent.com"
+                    data-context="signin"
+                    data-ux_mode="popup"
+                    data-callback="handleCredentialResponse"
+                    data-auto_prompt="false">
+                </div>
+                <div class="g_id_signin" data-type="standard" style = "width: 400px;"></div>
+            </div>
+            <a style = "margin-top: 50px; margin-left: -30px;" class = "go-back" href="login.html">
+                Already have an account?
+            </a>
+        </div>
+    </div>
+    <script src = "../scripts/captcha.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+</html>
