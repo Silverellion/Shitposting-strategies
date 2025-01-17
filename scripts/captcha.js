@@ -2,6 +2,12 @@ const captchaCheckbox = document.getElementById('captchaCheckbox');
 const captchaOverlay = document.getElementById('captchaOverlay');
 const captchaSpinner = document.getElementById('captchaSpinner');
 
+const verificationImages = document.querySelectorAll('#verificationImages img')
+const verifyButton = document.getElementById('verifyButton');
+const questionMarkIcon = document.getElementById('questionMarkIcon');
+const tryAgainText = document.getElementById('tryAgainText');
+const verifiedMark = document.getElementById('verifiedMark');
+
 captchaCheckbox.addEventListener('change', () => {
     if (captchaCheckbox.checked) {
         captchaCheckbox.classList.add('spinner')
@@ -28,14 +34,9 @@ function closePopup() {
     captchaOverlay.classList.add('closing'); 
     captchaOverlay.addEventListener('transitionend', () => {
         captchaOverlay.classList.remove('active', 'closing');
+        tryAgainText.classList.remove('active');
     }, { once: true });
 }
-
-const verificationImages = document.querySelectorAll('#verificationImages img')
-const verifyButton = document.getElementById('verifyButton');
-const questionMarkIcon = document.getElementById('questionMarkIcon');
-const tryAgainText = document.getElementById('tryAgainText');
-const verifiedMark = document.getElementById('verifiedMark');
 
 var selectedImage = 0;
 var verified = false;
