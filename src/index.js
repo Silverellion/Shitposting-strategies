@@ -1,9 +1,6 @@
-const {privateConnectionString} = require("../scripts/mongo/mongoPrivateInfos");
-
 export default {
     async fetch(request) {
-        const url = new URL(request.url);
-        const backendUrl = `http://${privateConnectionString}${url.pathname}`;
+        const backendUrl = `https://9c33-2405-4803-b482-9040-6972-4a00-d81e-831d.ngrok-free.app`;
 
         const modifiedRequest = new Request(backendUrl, {
             method: request.method,
