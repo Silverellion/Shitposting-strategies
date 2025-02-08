@@ -8,6 +8,9 @@ const questionMarkIcon = document.getElementById('questionMarkIcon');
 const tryAgainText = document.getElementById('tryAgainText');
 const verifiedMark = document.getElementById('verifiedMark');
 
+var selectedImage = 0;
+var verified = false;
+
 captchaCheckbox.addEventListener('change', () => {
     if (captchaCheckbox.checked) {
         captchaCheckbox.classList.add('spinner')
@@ -38,9 +41,6 @@ function closePopup() {
     }, { once: true });
 }
 
-var selectedImage = 0;
-var verified = false;
-
 verificationImages.forEach(image => {
     image.addEventListener('click', () => {
         if(image.style.transform === 'scale(0.8)') {
@@ -70,8 +70,12 @@ verifyButton.addEventListener('click', () => {
         captchaCheckbox.checked = true;
         verified = true;
     }
-})
+});
+
+const getVerified = (function() {
+    return verified;
+});
 
 questionMarkIcon.addEventListener('click', () => {
     alert('Fuck you');
-})
+});

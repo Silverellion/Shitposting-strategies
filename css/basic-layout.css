@@ -79,10 +79,16 @@
 .centered-box {
     margin-top: 20px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
 
     align-content: center;
     justify-content: center;
+}
+
+.close-button {
+    margin-right: 10px;
+    text-align: right;
+    color: rgb(173, 23, 23);
+    cursor: pointer;
 }
 
 .go-back {

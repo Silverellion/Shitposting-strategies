@@ -15,6 +15,35 @@
     width: 300px;
 }
 
+.error-box {
+    display: none; 
+    border: 1px solid rgb(255, 133, 133); 
+    border-radius: 3px; 
+    background: rgb(255, 234, 234); 
+    justify-items: space-between; 
+    
+    margin-left: 30px; 
+    margin-right: 70px; 
+
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.error-box2 {
+    display: none; 
+    border: 1px solid rgb(255, 133, 133); 
+    border-radius: 3px; 
+    background: rgb(255, 234, 234); 
+    justify-content: space-between; 
+    
+    margin-bottom: 10px; 
+    margin-right: 120px; 
+    margin-left: 100px; 
+
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
 .captcha-box {
     background-color: white;
     margin-right: 20px;

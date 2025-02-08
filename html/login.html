@@ -10,19 +10,49 @@
 <body>
     <div class = "master-background">
         <div class = "centered-box">
-            <h1 style = "color: lightyellow; font-size: 40px; margin-left: 110px; margin-top: 60px;">
-                Sign in
-            </h1>
+            <div>
+                <h1 style = "color: lightyellow; font-size: 40px; margin-left: 110px; margin-top: 60px;">
+                    Sign in
+                </h1>
+
+                <div id = "emptyFields" class = "error-box">
+                    <div style = "margin-left: 10px; text-align: left; color: rgb(173, 23, 23)">
+                        Please fill out all the fields.
+                    </div>
+                    <div class = "close-button" data-target = "emptyFields">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &times;
+                    </div>
+                </div>
+
+                <div id = "incorrectPassword" class = "error-box">
+                    <div style = "margin-left: 10px; text-align: left; color: rgb(173, 23, 23)">
+                        Incorrect username or password.
+                    </div>
+                    <div class = "close-button" data-target = "incorrectPassword">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &times;
+                    </div>
+                </div>
+
+                <div id = "captchaUnsolved" class = "error-box">
+                    <div style = "margin-left: 10px; text-align: left; color: rgb(173, 23, 23)">
+                        Please solve the Captcha.
+                    </div>
+                    <div class = "close-button" data-target = "captchaUnsolved">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &times;
+                    </div>
+                </div>
+
+            </div>
             <div>
                 <form action="">
                     <table class = "form-table">
                         <tr>
                             <td>Username</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" id = "usernameLog"></td>
                         </tr>
                         <tr>
                             <td>Password</td>
-                            <td><input type="password"></td>
+                            <td><input type="password" id = "passwordLog"></td>
                         </tr>
                     </table>
                 </form>
@@ -80,7 +110,7 @@
                 </div>
             </div>
             <div class = "register-button">
-                <button>Continue</button>
+                <button id = "loginButton">Continue</button>
                 <hr style = "margin-right: 30px">
             </div>
             <div class = "register-button">
@@ -89,7 +119,11 @@
             </div>
         </div>
     </div>
+
     <script src = "../scripts/captcha.js"></script>
+    <script src = "../scripts/generalUtility.js"></script>
+    <script src = "../scripts/login.js"></script>
+    
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </body>
 </html>
