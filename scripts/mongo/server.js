@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 
-const { MongooseConnect, UserRegistrar } = require("./scripts/mongo/mongoConnect");
-const MongoUser = require("./scripts/mongo/mongoUser");
+const { MongooseConnect, UserRegistrar } = require("./mongoConnect");
+const MongoUser = require("./mongoUser");
 
 const app = express();
 const PORT = 3000;

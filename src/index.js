@@ -1,7 +1,9 @@
+const {privateConnectionString} = require("../scripts/mongo/mongoPrivateInfos");
+
 export default {
     async fetch(request) {
         const url = new URL(request.url);
-        const backendUrl = `http://localhost:3000${url.pathname}`;
+        const backendUrl = `http://${privateConnectionString}${url.pathname}`;
 
         const modifiedRequest = new Request(backendUrl, {
             method: request.method,
